@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="mb-3">Categories</h1>
+  <form class="row g-3 mb-3" method="POST">
+      <div class="col-auto">
+          <input class="form-control" type="text" name="name" placeholder="New category name">
+      </div>
+    <div class="col-auto">
+      <button class="btn btn-primary" type="submit">Add</button>
+    </div>
+  </form>
+  <ul class="list-group">
+    {% for c in categories %}
+      <li class="list-group-item">{{ c.name }}</li>
+    {% else %}
+      <li class="list-group-item">No categories yet.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
