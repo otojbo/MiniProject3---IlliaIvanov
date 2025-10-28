@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 .idea/
+=======
+.venv/
+__pycache__/
+*.pyc
+*.db
+.DS_Store
+.env
+instance/
+>>>>>>> cf9cebd (chore: scaffold project and add base configs)
